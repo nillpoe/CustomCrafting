@@ -74,9 +74,9 @@ public class RecipeCommand implements TabExecutor {
                 completions.add(subCommand.getName());
             }
         } else {
-            SubCommand subCmdInstance = subCommands.get(args[0].toLowerCase());
-            if (subCmdInstance != null && subCmdInstance.hasPermission(sender)) {
-                completions = subCmdInstance.tabComplete(sender, label, args);
+            SubCommand subCommand = subCommands.get(args[0].toLowerCase());
+            if (subCommand != null && subCommand.hasPermission(sender)) {
+                completions = subCommand.tabComplete(sender, label, args);
             }
         }
 
