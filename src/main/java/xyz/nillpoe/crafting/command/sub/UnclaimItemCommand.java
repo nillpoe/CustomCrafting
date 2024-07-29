@@ -41,7 +41,7 @@ public class UnclaimItemCommand implements SubCommand {
             sender.sendMessage(ChatColor.RED + "해당 명령어는 플레이어만 사용할 수 있습니다.");
             return false;
         } else if (args.length == 0) {
-            sender.sendMessage(ChatColor.RED + "생성할 조합법의 이름을 입력해 주세요.");
+            sender.sendMessage(ChatColor.RED + "설정할 조합법의 이름을 입력해 주세요.");
             return false;
         } else if (args.length != 1) {
             sender.sendMessage(ChatColor.RED + "명령어 사용법이 올바르지 않습니다.");
